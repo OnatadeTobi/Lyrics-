@@ -6,7 +6,7 @@ import soundfile as sf
 import pyfiglet
 
 #if the lyrics don't appear, make sure the file is the song name, preferably (songname, author).mp3
-AUDIO_FILE   = "Sweather Weather.mp3"   # your song hear
+AUDIO_FILE   = "alone.mp3"   # your song hear
 START_TIME   = 39  # if you want to skip in certain parts
 
 LRC_FOLDER   = os.path.expanduser("~/lyrics")
