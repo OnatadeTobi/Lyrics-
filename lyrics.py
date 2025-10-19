@@ -72,12 +72,12 @@ else:
         lyrics_path = match
         print(f"Using closest local match: {match}")
     else:
-        print("No lyrics found online or locally.")
+        print("No lyrics found online or locally.")      
 
-lyrics = parse_lrc(lyrics_path) if lyrics_path else []
+lyrics = parse_lrc(lyrics_path) if lyrics_path else []   
 
 data, samplerate = sf.read(AUDIO_FILE, dtype="float32")
-if data.ndim > 1:
+if data.ndim > 1:  
     data = np.mean(data, axis=1)
 data = data / np.max(np.abs(data))
 start_idx = int(START_TIME * samplerate)
